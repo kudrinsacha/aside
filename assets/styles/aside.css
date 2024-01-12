@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "TT Lakes", sans-serif;
+}
+body {
+    background-color: #F8F8F8;
+}
+img {
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: #1B1C21;
+}
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+.aside, .wrapper, .nav, .footer, .footer__contact{
+    display: flex;
+    flex-direction: column;
+}
+.header, .header__logo, .footer__buttons{
+    display: flex;
+}
+.aside{
+    justify-content: space-between;
+    width: 320px;
+    height: 100vh;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
+    background: #fff;
+    padding: 0 24px;
+}
+.wrapper{
+    gap: 50px;
+}
+.header{
+    justify-content: space-between;
+    margin-top: 18px;
+}
+.header__logo{
+    gap: 17px;
+}
+.button:hover{
+    opacity: 0.5;
+    transition: 0.3S;
+}
+
+.nav{
+    gap: 32px;
+}
+.radio{
+    position: relative;
+}
+.text{
+    letter-spacing: -0.2px;
+    font-size: 16px;
+    color: #1B1C21;
+    font-weight: 500;
+    cursor: pointer;
+}
+.text:hover{
+    color: #7E7E82;
+    transition: 0.3s;
+}
+.radio__input {
+    position: absolute;
+    appearance: none;
+}
+
+.radio__input:checked + .radio__text {
+    color: #7E7E82;
+}
+.radio__input:checked + .radio__text::before {
+    content: '';
+    background-image: url("../images/icon-highlight.svg");
+    width: 4px;
+    height: 32px;
+    position: absolute;
+    top: -5px;
+    left: -24px;
+}
+
+.footer{
+    gap: 40px;
+    margin-bottom: 32px;
+}
+.footer__contact{
+    gap: 12px;
+}
+.footer__buttons{
+    gap: 16px;
+}
+.footer__link_tel{
+    font-size: 24px;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+}
